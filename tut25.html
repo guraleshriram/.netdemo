@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        :root {
+            /* this variable is globale variable ascess in hole program */
+            --box_color: black;
+            --box_shadow: red;
+            --bg_color:brown;
+            --maxw:700px;
+
+        }
+
+        .box {
+            /* --box_color:black;  /*this is local variable. this variable acess only in block and not acesss out side a block 
+            --box_shadow: red;
+            */ 
+            width: 200px;
+            height: 200px;
+            /* background-color: brown; */
+            background-color: var(--box_color);
+            border: 2px solid blue;
+            box-shadow: 2px 4px var(--box_shadow);
+            margin: 2px 10px;
+        }
+
+        .container {
+            max-width: var(--maxw);
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            background-color:var(--bg_color) ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>

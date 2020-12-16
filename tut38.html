@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope and condition</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+            <li>item 6</li>
+            <li>item 7</li>
+        </ul>
+    </div>
+    <script>
+        var str="this is javascript";
+        console.log(str);
+
+        //scope
+
+        let a="u";
+        {
+            let a="u6"
+            console.log(a);
+        }
+        console.log(a);
+        
+
+        //constant keyword
+        const b="wellcome to pune";
+        //b="wellcome to latur";
+        console.log(b);
+
+        // conditional statment
+         let age=5;
+         if(age>18)
+         {
+             console.log("wellcome to ageed group")
+         }
+         else if(age==5)
+         {
+             console.log("age is 5");
+         }
+         else
+         {
+             console.log("you are not eligibal");
+         }
+              
+
+              //swicth case
+
+
+              let con=21;
+          
+            switch (con) {
+
+                case 2:
+                    console.log("value is 2")
+                    break;
+
+                    
+                case 5:
+                    console.log("value is 5 ")
+                    break;
+            
+
+            
+                    case 6:
+                    console.log("value is 6")
+                    break;
+            
+            
+                    case 10:
+                    console.log("value is 10")
+                    break;
+            
+            
+                    case 20:
+                    console.log("value is 20")
+                    break;
+            
+            
+                default:
+                  console.log("nmber is not avalible")
+                    break;
+            }
+              
+
+    </script>
+</body>
+</html>

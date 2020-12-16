@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+      /*  *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }*/
+        body{
+            background-color: coral;
+        }
+        .container{
+            background-color:burlywood;;
+            border-style: solid;
+            /* we can set margin/padding top, bottom and left,right */
+          /* padding-left: 20px;
+            padding-top: 40px;
+            padding-right: 60px;
+            padding-bottom: 80px;*/
+
+            /* padding= top,right,bottom,left; in one line wirte 
+            padding: 20px 40px 60px 80px;*/
+               /* padding putting as X(left,right), y(top,bottom) axis */
+                padding: 20px 40px;
+                margin: 20px 40px;
+                border-radius: 10px;
+                width: 500px;
+            box-sizing: border-box; 
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>BOX MODEL</h2>
+    <p id="firstpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero aut culpa tenetur pariatur quo iste incidunt voluptatum deleniti optio, magnam eligendi dicta hic tempora assumenda eaque! Autem incidunt laborum voluptatum?</p>
+    </div>  
+
+    <div class="container">
+    <h2>BOX MODEL</h2>
+    <p id="secondpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero aut culpa tenetur pariatur quo iste incidunt voluptatum deleniti optio, magnam eligendi dicta hic tempora assumenda eaque! Autem incidunt laborum voluptatum?</p>
+    </div>    
+
+    <div class="container">
+    <h2>BOX MODEL</h2>
+    <p id="thirdpara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero aut culpa tenetur pariatur quo iste incidunt voluptatum deleniti optio, magnam eligendi dicta hic tempora assumenda eaque! Autem incidunt laborum voluptatum?</p>
+    </div>    
+
+    
+</body>
+</html>

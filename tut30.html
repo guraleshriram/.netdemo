@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating a grid </title>
+    <style>
+    .grid{
+        display: grid;
+        grid-template-rows: 1fr 2fr 3fr;
+        grid-auto-rows: 2fr;
+        grid-template-columns: 1fr 4fr 3fr;
+        grid-template-columns: repeat(4,2fr);
+        grid-gap: 2rem; 
+        grid-row-gap: 2px;
+        grid-column-gap: 3px;
+        grid-row: 1;
+    }
+    .box{
+        background-color: red;
+        border: 2px solid black;
+    }
+    </style>
+</head>
+<body>
+    <div class="grid">
+       <div class="box">this is grid-1</div>
+       <div class="box">this is grid-2</div>
+       <div class="box">this is grid-3</div>
+       <div class="box">this is grid-4</div>
+       <div class="box">this is grid-5</div>
+       <div class="box">this is grid-6</div>
+    </div>
+    
+</body>
+</html>

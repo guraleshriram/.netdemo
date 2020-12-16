@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 15px 10px;
+            border: 2px solid red;
+            margin: 20px 10px;
+                /*we set offset box shadowing to card in up and down  */
+            box-shadow: 12px 11px black;
+            box-shadow: -12px -11px black;
+            box-shadow: 12px 11px 5px gold;
+            box-shadow: 12px 11px 5px 20px grey;
+            box-shadow: 12px 11px 5px 20px rgba(121, 41, 41, 0.5);
+
+            /* inset box-shadowing */
+           box-shadow:inset 10px 12px red;
+           box-shadow: inset 5px 12px 4px 6px black;
+
+           /* text effect */
+        
+        }
+        .card h2{
+            text-shadow: 2px 5px palevioletred;
+            text-shadow: 2px 5px 2px  palegreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h1>card 1</h1>
+            <h2>this is first card</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis facere fugiat impedit corrupti autem?
+                Consequatur adipisci quo sint eligendi, iure voluptate assumenda laudantium corrupti enim, repellendus
+                laboriosam molestiae nemo illo!</p>
+        </div>
+        <div class="card" id="card2">
+            <h1>card 2</h1>
+            <h2>this is second card</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda dolorem nemo repudiandae porro
+                veniam? Voluptas odit fugiat itaque, ea, labore, iste delectus vel facere est vitae officia minus eos
+                sequi.</p>
+        </div>
+        <div class="card" id="card3">
+            <h1>card 3</h1>
+            <h2>this is thrid card</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quas in delectus perferendis sit, nobis
+                eveniet ut reiciendis facilis maiores? Nemo repudiandae excepturi quos officia laboriosam corporis,
+                saepe omnis alias.</p>
+        </div>
+    </div>
+</body>
+
+</html>

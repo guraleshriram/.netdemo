@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madia Query with Grid layout</title>
+    <style>
+        
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'navbar navbar navbar navbar '
+                    'section section section aside'
+                    
+
+                    'footer footer footer footer';
+            }
+
+            .item {
+                background-color: sienna;
+                border: 2px solid red;
+            }
+
+            #navbar {
+                grid-area: navbar;
+            }
+
+            #section {
+                grid-area: section;
+            }
+
+            #aside {
+                grid-area: aside;
+            }
+
+            #footer {
+                grid-area: footer;
+            }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            <a href="home">Home</a>
+            <a href="Service">Sercvie</a>
+            <a href="Contact US">Contact US</a>
+            <a href="About Us">About Us</a>
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. At nostrum perspiciatis enim! Porro voluptatum
+            atque, explicabo ratione, temporibus dicta a aperiam suscipit harum itaque deleniti maiores? Sunt tenetur
+            minus consectetur!
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore distinctio ea, porro quod animi
+            temporibus minus voluptatibus. Impedit, est voluptatum, aspernatur porro natus obcaecati pariatur nemo quas,
+            quae neque tempore.
+        </div>
+        <div id="footer" class="item">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore itaque eum iusto vel, facilis temporibus
+            eius provident debitis corrupti officia totam rem hic deserunt soluta omnis in? Soluta, quae explicabo.
+        </div>
+
+    </div>
+
+</body>
+
+</html>

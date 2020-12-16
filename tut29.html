@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 105px 105px 105px; */
+            /* grid-template-columns: 105px 200px auto; */
+               /* grid-template-columns: 105px auto auto; */
+               /* grid-template-columns: 1fr 4fr 1fr; */
+               grid-template-columns: repeat(6 , auto);
+               grid-gap: 2rem;
+               
+            
+        }
+        .item{
+            /* height: 100px;
+            width: 100px; */
+            background-color: burlywood;
+            border: 2px solid rgb(70, 23, 23);
+            padding: 10px;
+            text-align: center;
+            
+
+        }
+
+        #item1{
+               /* grid-column-start: 1;
+               grid-column-end: 4; */
+               grid-row-start: 1;
+               grid-row-end: 3;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+
+<div class="item" id="item1">this is item-1</div>
+<div class="item">this is item-2</div>
+<div class="item">this is item-3</div>
+<div class="item">this is item-4</div>
+<div class="item">this is item-5</div>
+<div class="item">this is item-6</div>
+<div class="item">this is item-6</div>
+<div class="item">this is item-6</div>
+<div class="item">this is item-6</div>
+<div class="item">this is item-6</div>
+<div class="item">this is item-6</div>
+<div class="item">this is item-6</div>
+
+
+</div>
+</body>
+</html>

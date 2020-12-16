@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event and listening Event</title>
+</head>
+<style>
+    #btn{
+        padding: 10px 14px;
+        background-color: brown;
+        color: white;
+        border: 2px solid black;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <!-- broswer event:
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup 
+    mousemove
+
+
+    submit
+    focuse
+
+    DOMcontentloaded
+
+    transitionend -->
+
+    <div class="container">
+        <h2>this is paragrah</h2>
+        <p id="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo commodi, tempore maxime voluptatem
+            aperiam provident deleniti maiores minima perferendis odit numquam voluptas blanditiis dicta corrupti nemo
+            tenetur perspiciatis est quidem, cupiditate magnam. Et ut obcaecati tenetur, enim at dolores reiciendis
+            necessitatibus aperiam aspernatur quidem nesciunt aliquid commodi, consequatur cum?
+        </p>
+        <button id="btn" onclick="hide()">show/hide</button>
+
+        
+    </div>
+
+    
+    <script>
+
+
+            let para=document.getElementById('para');
+
+            para.addEventListener('mouseover', function run(){
+
+                console.log("mouse inside");
+
+            });  
+            
+            para.addEventListener('mouseout',function run(){
+                console.log("mouse out");
+            })
+        function hide()
+        {
+            let btn=document.getElementById('btn');
+            let para=document.getElementById('para');
+            if(para.style.display != 'none')
+            {
+                para.style.display='none';
+            }
+            else
+            {
+                para.style.display='block';
+            }
+        }    
+        </script>
+
+</body>
+
+</html>

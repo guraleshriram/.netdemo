@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid with spaning</title>
+    <style>
+        .container
+        {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(4,1fr);
+            /* grid-column-gap: 4px;
+            grid-row-gap: 4px; */
+            grid-gap: 5px;
+
+            
+        }
+        .item
+        {
+            background-color: burlywood;
+            border: 2px solid springgreen;
+            padding: 5px;
+            
+
+        }
+
+        .item:first-child
+        {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 4;
+            grid-column: 1 / span 4;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+      <div class="item">this is item-</div>
+      <div class="item">this is item-</div>
+      <div class="item">this is item-</div>
+      <div class="item">this is item-</div>
+      <div class="item">this is item-</div>
+      <div class="item">this is item-</div>
+      <div class="item">this is item-</div>
+      <div class="item">this is item-</div>
+      <div class="item">this is item-</div>
+      <div class="item">this is item-</div>
+      <div class="item">this is item-</div>
+      <div class="item">this is item-</div>
+  </div>  
+</body>
+</html>

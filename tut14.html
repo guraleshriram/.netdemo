@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'PT Sans', sans-serif;
+        }
+
+        .container {
+            border: 3px solid red;
+            width: 900px;
+            margin: 33px auto;
+            border-radius: 11px;
+            background-color: hotpink;
+
+        }
+
+        .item {
+            border: 3px solid black;
+            padding: 12px 3px;
+            margin: 12px 3px;
+            background: gray;
+            border-radius: 5px;
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            /* float: left; */
+            float: right;
+            width: 48%;
+        }
+
+        #animal {
+            /* float: left; */
+            /* clear: left; */
+            clear: both;
+            width: 100%;
+        }
+
+        p,h2{
+          /*  text-align: center;
+            text-align: left;
+            text-align: right;*/
+            text-align: justify;
+        }
+        #h{
+            text-align: center;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="h">wellcome to store </h2>
+        <div id="fruits" class="item">
+            <h2>fruits</h2>
+            <p id="firstpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab obcaecati
+                sapiente nisi excepturi error numquam et, quam suscipit neque molestiae vero distinctio officia
+                asperiores voluptatibus aliquid! Fuga reiciendis porro soluta? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam voluptas, facilis ad quos quia voluptatem. Inventore, voluptatem. Quis quia excepturi quidem quibusdam impedit cumque? Dolores sapiente eius hic voluptate consectetur!</p>
+        </div>
+        <div id="computer" class="item">
+            <h2>computer</h2>
+            <p id="secondpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam impedit
+                aliquam laborum labore nam officia quas et error, laudantium quasi atque inventore exercitationem quos
+                accusantium quaerat voluptas tenetur saepe odit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aut tempora amet adipisci itaque iure, perspiciatis doloribus delectus esse. Omnis laborum odio deserunt, dolores in repudiandae? Odio nesciunt architecto ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam illo quae, libero nulla, aspernatur ullam deserunt porro culpa commodi vitae odio eligendi nam nostrum voluptates. Quaerat magni labore mollitia voluptatibus.</p>
+        </div>
+        <div id="animal" class="item">
+            <h2>animal</h2>
+            <p id="thirdpara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, et.
+                Laborum dolore error blanditiis deserunt vel, temporibus ducimus reprehenderit, fugiat illum, id
+                laudantium numquam perspiciatis. Delectus nisi tenetur iste quibusdam?</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
